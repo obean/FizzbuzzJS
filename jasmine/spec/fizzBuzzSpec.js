@@ -27,7 +27,11 @@ describe('Javabuzz', function() {
     });
 
     it('is divisible by neither 3 or 5', function() {
-      expect(javabuzz.neither(7)).toBe(true);
+      expect(javabuzz.isDivisibleByNeither(7)).toBe(true);
+    });
+
+    it('knows 75 is divisible by both', function() {
+      expect(javabuzz.fizzBuzz(75)).toBe("FizzBuzz")
     });
 
   });
